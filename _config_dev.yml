@@ -51,4 +51,4 @@ iP-Sources: "/Biology/RecursosDev"
 collections:
   Apuntes-Bio:
     output: true
-    permalink: /:categories/:year/:month/:day/:title/
+    permalink: /Biology/:categories/:year/:month/:day/:title/
