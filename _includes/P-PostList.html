@@ -7,7 +7,7 @@ Este include necesita dos parámetros:
 <ul id="PostsList">
 	{% for post in include.coleccion %}
 		<li>
-			<h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+			<h2><a href="{{ site.baseurl }}/{{ include.pagina }}{{ post.url }}">{{ post.title }}</a></h2>
 			<small>
 				{% assign words = post.content | number_of_words %}
 				{% include U-FechaEsp.html fecha=post.date %}    
@@ -18,7 +18,7 @@ Este include necesita dos parámetros:
 			{{ post.excerpt }}
 
 			{% for tag in post.tags %}
-				<a class="TagPost" href="{{ site.url }}/{{ include.pagina }}/Tags/#{{ tag | slugify }}"><i class="fa fa-tag"></i> {{ tag }}</a>
+				<a class="TagPost" href="{{ site.baseurl }}/{{ include.pagina }}/Tags/#{{ tag | slugify }}"><i class="fa fa-tag"></i> {{ tag }}</a>
 			{% endfor %}
 		</li>
 	{% endfor %}
