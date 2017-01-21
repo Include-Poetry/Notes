@@ -1,0 +1,18 @@
+{% assign subject = "" %}
+{% assign subject = "biology" %}
+
+{% assign Note = "" %}
+{% assign Note = "Apuntes de biología" %}
+
+		<header class="{{ include.nivel }}" id="HMain">
+			<section>
+				<a href="{{ site.url }}/{{ subject || capitalize }}/">
+					<span class="Inco">#include</span>
+					<span class="Fre">&lt;{{ subject }}&gt;</span>
+				</a>
+			</section>
+			<h4>/* {{ Note }} */</h4>
+			{% if include.nivel contains "HOficial" %}
+				{% include P-HMultibtn.html %}
+			{% endif %}
+		</header>

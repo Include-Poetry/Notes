@@ -1,0 +1,62 @@
+# Nombre del sitio
+name: Include Poetry
+
+# Título
+title: Include Poetry
+
+# Descripcón del sitio
+description: Apuntes de licenciatura en biología por rivel_co.
+
+# Email
+email: includepoetry@gmail.com
+
+# Facebook
+facebook:
+  app_id: 201218926955149
+
+# Autor
+author: rivel_co
+
+# Versión de Markdown
+markdown: kramdown
+
+# Google services
+google_analytics: UA-74086952-1
+
+# Base del sitio
+url: "https://www.include-poetry.com"
+baseurl: /Biology
+
+# Excuidos de la conversión
+exclude: [vendor]
+
+#paginate: 8
+#paginate_path: "/Blog/Pagina-:num/"
+
+# Gemas
+gems:
+  - algoliasearch-jekyll
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Algolia
+algolia:
+  application_id: 'QO0HGR5828'
+  index_name:     'IPBiology'
+  read_only_api_key: 'eb04fe369bec3b6b078e4eb51ea48ae6'
+  record_css_selector: 'p,ul'
+
+# Variables del sitio
+logo-grande-n: "/Multimedia/Logo/IPoetryN.png"
+logo-chico-n: "/Multimedia/Logo/IPN.png"
+logo-grande-b: "/Multimedia/Logo/IPoetryB.png"
+logo-chico-b: "/Multimedia/Logo/IPB.png"
+logo-pluma: "/Multimedia/Logo/RPlumaN.png"
+iP-Sources: "https://www.include-poetry.com/IP-Sources"
+
+# Colecciones 
+collections:
+  Apuntes-Bio:
+    output: true
+    permalink: /:categories/:year/:month/:day/:title/
