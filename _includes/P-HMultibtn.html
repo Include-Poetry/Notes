@@ -1,5 +1,7 @@
 {% assign Home = "" %}
-{% assign Home = "Biology/" %}
+{% if page.url contains "Biology/" %}
+	{% assign Home = "Notes/Biology/" %}
+{% endif %}
 
 <div class="btn-multi">
 	<input type="checkbox" id="multi-btn" name="multi-btn" />
