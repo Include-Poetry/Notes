@@ -24,7 +24,7 @@ markdown: kramdown
 google_analytics: UA-74086952-1
 
 # Base del sitio url: "http://localhost:4000" "http://192.168.1.65:4000" url: "http://169.254.223.56:4000"
-url: "http://192.168.1.67:4000"
+url: "http://192.168.1.66:4000"
 baseurl: /Notes
 host: 0.0.0.0
 
@@ -45,10 +45,25 @@ logo-chico-n: "/Multimedia/Logo/IPN.png"
 logo-grande-b: "/Multimedia/Logo/IPoetryB.png"
 logo-chico-b: "/Multimedia/Logo/IPB.png"
 logo-pluma: "/Multimedia/Logo/RPlumaN.png"
-iP-Sources: "/Biology/RecursosDev"
+iP-Sources: "/Notes/RecursosDev"
 
 # Colecciones
 collections:
   Apuntes-Bio:
     output: true
     permalink: /Biology/:categories/:year/:month/:day/:title/
+  B-Celular:
+    output: true
+    permalink: /Biologia-celular-I/:categories/:year/:month/:day/:title/
+  B-Procariontes:
+    output: true
+    permalink: /Biologia-procariontes/:categories/:year/:month/:day/:title/
+  BioquimicaB:
+    output: true
+    permalink: /Bioquimica-basica/:categories/:year/:month/:day/:title/
+  C-Integral:
+    output: true
+    permalink: /Calculo-integral/:categories/:year/:month/:day/:title/
+  FQB:
+    output: true
+    permalink: /Fisico-quimica-biologica/:categories/:year/:month/:day/:title/

@@ -60,3 +60,18 @@ collections:
   Apuntes-Bio:
     output: true
     permalink: /Biology/:categories/:year/:month/:day/:title/
+  B-Celular:
+    output: true
+    permalink: /Biologia-celular-I/:categories/:year/:month/:day/:title/
+  B-Procariontes:
+    output: true
+    permalink: /Biologia-procariontes/:categories/:year/:month/:day/:title/
+  BioquimicaB:
+    output: true
+    permalink: /Bioquimica-basica/:categories/:year/:month/:day/:title/
+  C-Integral:
+    output: true
+    permalink: /Calculo-integral/:categories/:year/:month/:day/:title/
+  FQB:
+    output: true
+    permalink: /Fisico-quimica-biologica/:categories/:year/:month/:day/:title/
