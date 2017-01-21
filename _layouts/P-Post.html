@@ -2,7 +2,10 @@
 {% include U-Comentario.html %}
 {% endif %}
 
-{% assign pagina = "Biology" %}
+{% assign pagina = "" %}
+{% if page.url contains "Biology/" %}
+	{% assign pagina = "Biology" %}
+{% endif %}
 
 <!DOCTYPE html>
 <html lang="es">
@@ -29,7 +32,7 @@
 					<i class="fa fa-user-o" aria-hidden="true"></i><a href="{{ site.url }}/Equipo/{{ page.author }}/"> {{ page.author }}</a> 
 			    </small>
 		    	{% for tag in page.tags %}
-					<a class="TagPost" href="{{ site.url }}/{{ pagina }}/Tags/#{{ tag | slugify }}"><i class="fa fa-tag"></i> {{ tag }}</a>
+					<a class="TagPost" href="{{ site.baseurl }}/{{ pagina }}/Tags/#{{ tag | slugify }}"><i class="fa fa-tag"></i> {{ tag }}</a>
 				{% endfor %}
 			    
 				{{ content }}
