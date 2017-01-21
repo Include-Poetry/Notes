@@ -1,12 +1,14 @@
 {% assign subject = "" %}
-{% assign subject = "biology" %}
-
 {% assign Note = "" %}
-{% assign Note = "Apuntes de biología" %}
+
+{% if page.url contains "Biology/" %}
+	{% assign subject = "biology" %}
+	{% assign Note = "Apuntes de biología" %}
+{% endif %}
 
 		<header class="{{ include.nivel }}" id="HMain">
 			<section>
-				<a href="{{ site.url }}/{{ subject || capitalize }}/">
+				<a href="{{ site.url }}/Notes/{{ subject || capitalize }}/">
 					<span class="Inco">#include</span>
 					<span class="Fre">&lt;{{ subject }}&gt;</span>
 				</a>
