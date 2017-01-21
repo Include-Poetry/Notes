@@ -1,14 +1,41 @@
 {% assign subject = "" %}
 {% assign Note = "" %}
+{% assign link = "" %}
 
 {% if page.url contains "Biology/" %}
 	{% assign subject = "biology" %}
 	{% assign Note = "Apuntes de biología" %}
+	{% assign link = "Biology" %}
+{% endif %}
+{% if page.url contains "Biologia-celular-I/" %}
+	{% assign subject = "b.celular.I" %}
+	{% assign Note = "Apuntes de biología celular I" %}
+	{% assign link = "Biologia-celular-I" %}
+{% endif %}
+{% if page.url contains "Biologia-procariontes/" %}
+	{% assign subject = "b.procariontes" %}
+	{% assign Note = "Apuntes de biología de procariontes" %}
+	{% assign link = "Biologia-procariontes" %}
+{% endif %}
+{% if page.url contains "Bioquimica-basica/" %}
+	{% assign subject = "bioquimica.b" %}
+	{% assign Note = "Apuntes de bioquímica básica" %}
+	{% assign link = "Bioquimica-basica" %}
+{% endif %}
+{% if page.url contains "Calculo-integral/" %}
+	{% assign subject = "c.integral" %}
+	{% assign Note = "Apuntes de cálculo integral" %}
+	{% assign link = "Calculo-integral" %}
+{% endif %}
+{% if page.url contains "Fisico-quimica-biologica/" %}
+	{% assign subject = "fqb" %}
+	{% assign Note = "Apuntes de fisico-química biológia" %}
+	{% assign link = "Fisico-quimica-biologica" %}
 {% endif %}
 
 		<header class="{{ include.nivel }}" id="HMain">
 			<section>
-				<a href="{{ site.url }}/Notes/{{ subject || capitalize }}/">
+				<a href="{{ site.url }}/Notes/{{ link }}/">
 					<span class="Inco">#include</span>
 					<span class="Fre">&lt;{{ subject }}&gt;</span>
 				</a>
