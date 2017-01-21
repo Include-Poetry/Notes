@@ -59,4 +59,4 @@ iP-Sources: "https://www.include-poetry.com/IP-Sources"
 collections:
   Apuntes-Bio:
     output: true
-    permalink: /:categories/:year/:month/:day/:title/
+    permalink: /Biology/:categories/:year/:month/:day/:title/
