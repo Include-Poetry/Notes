@@ -29,7 +29,7 @@ baseurl: /Notes
 host: 0.0.0.0
 
 # Excuidos de la conversión
-# exclude: [No en git, Montar.bat, Sublime  iP.sublime-project, Sublime  iP.sublime-workspace]
+exclude: [Montar.bat, IP-Notes.sublime-project, IP-Notes.sublime-workspace]
 
 #incremental: true;
 
