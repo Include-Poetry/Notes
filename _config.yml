@@ -35,17 +35,9 @@ exclude: [vendor]
 
 # Gemas
 gems:
-  - algoliasearch-jekyll
   - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-sitemap
-
-# Algolia
-algolia:
-  application_id: 'QO0HGR5828'
-  index_name:     'IPBiology'
-  read_only_api_key: 'eb04fe369bec3b6b078e4eb51ea48ae6'
-  record_css_selector: 'p,ul'
 
 # Variables del sitio
 logo-grande-n: "/Multimedia/Logo/IPoetryN.png"
