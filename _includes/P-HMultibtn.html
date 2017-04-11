@@ -1,29 +1,9 @@
-{% assign Home = "" %}
-{% if page.url contains "Biology/" %}
-	{% assign Home = "Biology/" %}
-{% endif %}
-{% if page.url contains "Biologia-celular-I/" %}
-	{% assign Home = "Biologia-celular-I/" %}
-{% endif %}
-{% if page.url contains "Biologia-procariontes/" %}
-	{% assign Home = "Biologia-procariontes/" %}
-{% endif %}
-{% if page.url contains "Bioquimica-basica/" %}
-	{% assign Home = "Bioquimica-basica/" %}
-{% endif %}
-{% if page.url contains "Calculo-integral/" %}
-	{% assign Home = "Calculo-integral/" %}
-{% endif %}
-{% if page.url contains "Fisico-quimica-biologica/" %}
-	{% assign Home = "Fisico-quimica-biologica/" %}
-{% endif %}
-
 <div class="btn-multi">
 	<input type="checkbox" id="multi-btn" name="multi-btn" />
 	<label for="multi-btn" id="lgrande"></label>
 	<label for="multi-btn" id="botonsitos">
 		<span class="btn btn-circle">
-			<a href="{{ site.url }}/Notes/{{ Home }}" title="Ir al inicio"><i class="fa fa-home icon" aria-hidden="true"></i></a>
+			<a href="{{ site.baseurl }}/{{ include.destino }}" title="Ir al inicio"><i class="fa fa-home icon" aria-hidden="true"></i></a>
 		</span>
 		<span class="btn btn-circle">
 			<a href="{{ site.url }}/Blog/Contacto/" title="Contacto"><i class="fa fa-comment icon" aria-hidden="true"></i></a>

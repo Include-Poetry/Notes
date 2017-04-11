@@ -1,9 +1,37 @@
+{% assign link = "" %}
+{% assign subject = "notes" %}
+
+{% if page.url contains "Introduccion-biologia/" %}
+	{% assign link = "Introduccion-biologia/" %}
+	{% assign subject = "biology" %}
+{% endif %}
+{% if page.url contains "Biologia-celular/" %}
+	{% assign link = "Biologia-celular/" %}
+	{% assign subject = "b.celular" %}
+{% endif %}
+{% if page.url contains "Biologia-procariontes/" %}
+	{% assign link = "Biologia-procariontes/" %}
+	{% assign subject = "b.procariontes" %}
+{% endif %}
+{% if page.url contains "Bioquimica-basica/" %}
+	{% assign link = "Bioquimica-basica/" %}
+	{% assign subject = "bioquimica.b" %}
+{% endif %}
+{% if page.url contains "Calculo-integral/" %}
+	{% assign link = "Calculo-integral/" %}
+	{% assign subject = "c.integral" %}
+{% endif %}
+{% if page.url contains "Fisicoquimica-biologica/" %}
+	{% assign link = "Fisicoquimica-biologica/" %}
+	{% assign subject = "fqb" %}
+{% endif %}
+
 		<header class="{{ include.nivel }}" id="HPost">
-			<span>#include &lt;poetry&gt;</span>
+			<span>#include &lt;{{ subject }}&gt;</span>
 			<section class="Kau">
 				{{ page.title }}
 			</section>
 			{% if include.nivel contains "HOficial"%}
-				{% include P-HMultibtn.html %}
+				{% include P-HMultibtn.html destino = link %}
 			{% endif %}
 		</header>
