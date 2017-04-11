@@ -3,11 +3,11 @@
 {% endif %}
 
 {% assign pagina = "" %}
-{% if page.url contains "Biology/" %}
-	{% assign pagina = "Biology" %}
+{% if page.url contains "Introduccion-biologia/" %}
+	{% assign pagina = "Introduccion-biologia" %}
 {% endif %}
-{% if page.url contains "Biologia-celular-I/" %}
-	{% assign pagina = "Biologia-celular-I" %}
+{% if page.url contains "Biologia-celular/" %}
+	{% assign pagina = "Biologia-celular" %}
 {% endif %}
 {% if page.url contains "Biologia-procariontes/" %}
 	{% assign pagina = "Biologia-procariontes" %}
@@ -18,14 +18,14 @@
 {% if page.url contains "Calculo-integral/" %}
 	{% assign pagina = "Calculo-integral" %}
 {% endif %}
-{% if page.url contains "Fisico-quimica-biologica/" %}
-	{% assign pagina = "Fisico-quimica-biologica" %}
+{% if page.url contains "Fisicoquimica-biologica/" %}
+	{% assign pagina = "Fisicoquimica-biologica" %}
 {% endif %}
 
 <!DOCTYPE html>
 <html lang="es">
 	<head>
-		{% include U-Head.html tdef="#iP - Blog"%}
+		{% include U-Head.html tdef="#iP - Notes"%}
 
 		{% include P-Head.html %}
 
@@ -41,10 +41,12 @@
 			{% include P-HPost.html nivel="HFalso" %}
 			<article>
 				<small>
+				{% unless page.Hide_data %}
 					{% assign words = content | number_of_words %}
 					{% include U-FechaEsp.html fecha=page.date %}    
 					{% include U-TiLec.html palabras=words%} | 
 					<i class="fa fa-user-o" aria-hidden="true"></i><a href="{{ site.url }}/Equipo/{{ page.author }}/"> {{ page.author }}</a> 
+		        {% endunless %}
 			    </small>
 		    	{% for tag in page.tags %}
 					<a class="TagPost" href="{{ site.baseurl }}/{{ pagina }}/Tags/#{{ tag | slugify }}"><i class="fa fa-tag"></i> {{ tag }}</a>
