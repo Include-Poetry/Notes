@@ -4,7 +4,9 @@ title: Conceptos físicos
 date: 2017-01-24 22:44:00
 author: rivel_co
 tags: [Conceptos, Fórmulas]
-category: [Semestre-2, Parcial-1]
+universidad: [Semestre-2, Parcial-1]
+olimpiada: [ONB, ONQ, ONF]
+subject: [Fisicoquímica biológica]
 ---
 
 Como continuación a la introducción, se reincorporan conceptos esenciales de física.

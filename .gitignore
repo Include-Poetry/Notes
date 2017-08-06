@@ -1,6 +1,10 @@
 _site/
 RecursosDev/
+Development/
 .jekyll-metadata
 IP-Notes.sublime-workspace
 IP-Notes.sublime-project
 Montar.bat
+_algolia_api_key
+UpAlgolia\.bat
+Construir\.bat

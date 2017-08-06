@@ -35,9 +35,29 @@ exclude: [vendor]
 
 # Gemas
 gems:
+  - algoliasearch-jekyll
   - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-sitemap
+
+# Algolia - buscador
+algolia:
+  application_id: 'QC3QNXU3KT'
+  index_name: 'MainIndexIPN'
+  excluded_files:
+    - 404.md
+    - Buscador/index.html
+    - Biologia-celular/index.html
+    - Biologia-procariontes/index.html
+    - Fisicoquimica-biologica/index.html
+    - Introduccion-biologia/index.html
+  record_css_selector: 'p,ul,ol,blockquote,table'
+  settings:
+    attributesForFaceting:
+      - tags
+      - olimpiada
+      - subject
+      - author
 
 # Variables del sitio
 logo-grande-n: "/Multimedia/Logo/IPoetryN.png"
@@ -49,21 +69,18 @@ iP-Sources: "https://www.include-poetry.com/IP-Sources"
 
 # Colecciones 
 collections:
-  Apuntes-Bio:
+  Intro-bio:
     output: true
-    permalink: /Biology/:categories/:year/:month/:day/:title/
+    permalink: /Introduccion-biologia/:title/
   B-Celular:
     output: true
-    permalink: /Biologia-celular-I/:categories/:year/:month/:day/:title/
+    permalink: /Biologia-celular/:title/
   B-Procariontes:
     output: true
-    permalink: /Biologia-procariontes/:categories/:year/:month/:day/:title/
+    permalink: /Biologia-procariontes/:title/
   BioquimicaB:
     output: true
-    permalink: /Bioquimica-basica/:categories/:year/:month/:day/:title/
-  C-Integral:
-    output: true
-    permalink: /Calculo-integral/:categories/:year/:month/:day/:title/
+    permalink: /Bioquimica-basica/:title/
   FQB:
     output: true
-    permalink: /Fisico-quimica-biologica/:categories/:year/:month/:day/:title/
+    permalink: /Fisicoquimica-biologica/:title/
