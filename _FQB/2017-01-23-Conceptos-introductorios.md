@@ -4,7 +4,9 @@ title: Conceptos introductorios
 date: 2017-01-23 21:57:00
 author: rivel_co
 tags: [Conceptos]
-category: [Semestre-2, Parcial-1]
+universidad: [Semestre-2, Parcial-1]
+olimpiada: [ONB, ONQ, ONF]
+subject: [Fisicoquímica biológica]
 ---
 
 Conceptos introductorios y de repaso para el curso de fisicoquímica en biología.

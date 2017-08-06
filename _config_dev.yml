@@ -24,12 +24,12 @@ markdown: kramdown
 google_analytics: UA-74086952-1
 
 # Base del sitio url: "http://localhost:4000" url: "http://169.254.223.56:4000"
-url: "http://192.168.1.64:4000"
+url: "http://192.168.1.75:4000"
 baseurl: "/Notes"
 host: 0.0.0.0
 
 # Excuidos de la conversión
-exclude: [Montar.bat, IP-Notes.sublime-project, IP-Notes.sublime-workspace]
+exclude: [Montar.bat, IP-Notes.sublime-project, IP-Notes.sublime-workspace, Development]
 
 #incremental: true;
 
@@ -37,7 +37,30 @@ exclude: [Montar.bat, IP-Notes.sublime-project, IP-Notes.sublime-workspace]
 # paginate_path: "/Blog/Pagina-:num/"
 
 # Gemas
-# gems: jekyll-paginate-v2
+gems:
+  - algoliasearch-jekyll
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Algolia - buscador
+algolia:
+  application_id: 'QC3QNXU3KT'
+  index_name: 'MainIndexIPN'
+  excluded_files:
+    - 404.md
+    - Buscador/index.html
+    - Biologia-celular/index.html
+    - Biologia-procariontes/index.html
+    - Fisicoquimica-biologica/index.html
+    - Introduccion-biologia/index.html
+  record_css_selector: 'p,ul,ol,blockquote,table'
+  settings:
+    attributesForFaceting:
+      - tags
+      - olimpiada
+      - subject
+      - author
 
 # Variables del sitio
 logo-grande-n: "/Multimedia/Logo/IPoetryN.png"
@@ -63,9 +86,6 @@ collections:
   BioquimicaB:
     output: true
     permalink: /Bioquimica-basica/:title/
-  C-Integral:
-    output: true
-    permalink: /Calculo-integral/:title/
   FQB:
     output: true
     permalink: /Fisicoquimica-biologica/:title/
