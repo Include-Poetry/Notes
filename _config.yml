@@ -48,9 +48,15 @@ algolia:
     - 404.md
     - Buscador/index.html
     - Biologia-celular/index.html
+    - Biologia-celular/Tags/index.html
     - Biologia-procariontes/index.html
+    - Biologia-procariontes/Tags/index.html
+    - Bioquimica-basica/index.html
+    - Bioquimica-basica/Tags/index.html
     - Fisicoquimica-biologica/index.html
+    - Fisicoquimica-biologica/Tags/index.html
     - Introduccion-biologia/index.html
+    - Introduccion-biologia/Tags/index.html
   record_css_selector: 'p,ul,ol,blockquote,table'
   settings:
     attributesForFaceting:
