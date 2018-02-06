@@ -8,7 +8,7 @@ title: Include Poetry
 description: Apuntes de licenciatura en biología por rivel_co.
 
 # Email
-email: includepoetry@gmail.com
+email: contacto@include-poetry.com
 
 # Facebook
 facebook:
@@ -28,17 +28,8 @@ url: "https://www.include-poetry.com"
 baseurl: /Notes
 
 # Excuidos de la conversión
-exclude: [vendor]
-
-#paginate: 8
-#paginate_path: "/Blog/Pagina-:num/"
-
-# Gemas
-gems:
-  - algoliasearch-jekyll
-  - jekyll-paginate
-  - jekyll-seo-tag
-  - jekyll-sitemap
+exclude:
+  - vendor
 
 # Algolia - buscador
 algolia:
