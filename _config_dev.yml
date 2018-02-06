@@ -8,7 +8,7 @@ title: Include Poetry
 description: Apuntes de licenciatura en biología por rivel_co.
 
 # Email
-email: includepoetry@gmail.com
+email: contacto@include-poetry.com
 
 # Facebook
 facebook:
@@ -24,30 +24,22 @@ markdown: kramdown
 google_analytics: UA-74086952-1
 
 # Base del sitio url: "http://localhost:4000" url: "http://169.254.223.56:4000"
-url: "http://192.168.1.75:4000"
+url: "http://localhost:4000"
 baseurl: "/Notes"
-host: 0.0.0.0
+#host: 0.0.0.0
 
 # Excuidos de la conversión
-exclude: [Montar.bat, IP-Notes.sublime-project, IP-Notes.sublime-workspace, Development]
-
-#incremental: true;
-
-# paginate: 8
-# paginate_path: "/Blog/Pagina-:num/"
-
-# Gemas
-gems:
-  - algoliasearch-jekyll
-  - jekyll-paginate
-  - jekyll-seo-tag
-  - jekyll-sitemap
+exclude: 
+  - Montar.bat
+  - IP-Notes.sublime-project
+  - IP-Notes.sublime-workspace
+  - Development
 
 # Algolia - buscador
 algolia:
   application_id: 'QC3QNXU3KT'
   index_name: 'MainIndexIPN'
-  excluded_files:
+  files_to_exclude:
     - 404.md
     - Buscador/index.html
     - Biologia-celular/index.html
@@ -60,7 +52,7 @@ algolia:
     - Fisicoquimica-biologica/Tags/index.html
     - Introduccion-biologia/index.html
     - Introduccion-biologia/Tags/index.html
-  record_css_selector: 'p,ul,ol,blockquote,table'
+  nodes_to_index: 'p,ul,ol,blockquote,table'
   settings:
     attributesForFaceting:
       - tags
