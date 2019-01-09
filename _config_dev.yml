@@ -35,6 +35,11 @@ exclude:
   - IP-Notes.sublime-workspace
   - Development
 
+# Gemas
+plugins: 
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
 # Algolia - buscador
 algolia:
   application_id: 'QC3QNXU3KT'
