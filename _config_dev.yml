@@ -8,11 +8,7 @@ title: Include Poetry
 description: Apuntes de licenciatura en biología por rivel_co.
 
 # Email
-email: contacto@include-poetry.com
-
-# Facebook
-facebook:
-  app_id: 201218926955149
+email: includepoetry@protonmail.com
 
 # Autor
 author: rivel_co
@@ -29,14 +25,14 @@ baseurl: "/Notes"
 #host: 0.0.0.0
 
 # Excuidos de la conversión
-exclude: 
+exclude:
   - Montar.bat
   - IP-Notes.sublime-project
   - IP-Notes.sublime-workspace
   - Development
 
 # Gemas
-plugins: 
+plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
